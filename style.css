@@ -1,0 +1,25 @@
+#mains{
+    text-align: center;
+    margin-top: 10px;
+}
+#main{
+    border-radius: 5px;
+    background-color: aqua;
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 20px;
+}
+#main input{
+    display: block;
+    border-radius: 5px;
+    border: none;
+    line-height: 25px;
+    width: 370px;
+}
+#main h3{
+    font-family: "Knewave", system-ui;
+    font-weight: normal;
+}
+#checkButton{
+    margin-top: 20px;
+}
