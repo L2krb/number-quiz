@@ -14,7 +14,8 @@ checkButton.onclick=function(){
     if (secretNumber==playerInput.value){
         console.log("You win")
         lives.innerHTML="🏆🏆🏆"
-        checkButton.disabled=true
+        checkButton.style.display="none"
+        newgame.style.left = "20px"
     }
     else{
         console.log("Incorrect");
@@ -29,8 +30,8 @@ checkButton.onclick=function(){
     }
     if (hp==0){
         lives.innerHTML="💀💀💀"
-        checkButton.disabled=true
         hint.innerHTML=secretNumber
+        checkButton.style.display="none"
     }
 }
 newgame.onclick=function(){
@@ -38,6 +39,6 @@ newgame.onclick=function(){
     hp=3
     lives.innerHTML="❤️".repeat(hp)
     hint.innerHTML="Enter number and click Check!"
-    checkButton.disabled=false
     playerInput.value=''
+    checkButton.style.display="inline-block"
 }
